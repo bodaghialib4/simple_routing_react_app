@@ -6,6 +6,7 @@ import Header from "./layouts/Header";
 
 import Home from './components/Home'
 import Product from "./components/Product";
+import About from "./components/About";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route path="/products/:product" component={Product}/>
+        <Route path="/about" component={About}/>
       </Switch>
       <Footer/>
     </div>
