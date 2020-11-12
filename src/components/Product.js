@@ -1,0 +1,38 @@
+import React from 'react';
+import {Link} from 'react-router-dom';
+
+import slack from './../assets/slack.png';
+import twist from './../assets/twist.png';
+import paymo from './../assets/paymo.png';
+
+const Product = ({match}) => {
+  let img;
+  switch (match.params.product) {
+    case 'slack':
+      img = slack;
+      break;
+    case 'twist':
+      img = twist;
+      break;
+    default:
+      img = paymo;
+      break;
+  }
+  return (
+    <div className="container">
+      <div className="row justify-content-center">
+        <div className="col-md-3">
+          <div className="card mb-4 shadow-sm">
+            <img className="card-img-top" src={img} alt={match.params.product}/>
+            <h4 className="text-center p-2">{match.params.product}</h4>
+            <div className="card-body">
+              <Link to="/" className="btn btn-sm btn-block btn-outline-secondary">Back to Home</Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Product

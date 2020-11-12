@@ -15,7 +15,7 @@ const Home = () => {
             <img className="card-img-top" src={slack} alt='slack'/>
             <div className="card-body">
               <p className="card-text">Slack is a new-age team communication and collaboration tool.</p>
-              <Link to={"/"} className="btn btn-sm btn-block btn-outline-secondary">View</Link>
+              <Link to={"/products/slack"} className="btn btn-sm btn-block btn-outline-secondary">View</Link>
             </div>
           </div>
         </div>
@@ -25,7 +25,7 @@ const Home = () => {
             <img className="card-img-top" src={twist} alt='twist'/>
             <div className="card-body">
               <p className="card-text">Teams have hundreds of conversations happening at once </p>
-              <Link to={"/"} className="btn btn-sm btn-block btn-outline-secondary">View</Link>
+              <Link to={"/products/twist"} className="btn btn-sm btn-block btn-outline-secondary">View</Link>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@ const Home = () => {
             <img className="card-img-top" src={paymo} alt='paymo'/>
             <div className="card-body">
               <p className="card-text">Paymo acts as a single source of truth when it comes to managing...</p>
-              <Link to={"/"} className="btn btn-sm btn-block btn-outline-secondary">View</Link>
+              <Link to={"/products/paymo"} className="btn btn-sm btn-block btn-outline-secondary">View</Link>
             </div>
           </div>
         </div>
