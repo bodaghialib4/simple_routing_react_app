@@ -7,6 +7,7 @@ import Header from "./layouts/Header";
 import Home from './components/Home'
 import Product from "./components/Product";
 import About from "./components/About";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Route exact path="/" component={Home}/>
         <Route path="/products/:product" component={Product}/>
         <Route path="/about" component={About}/>
+
+        <Route component={NotFound}/>
       </Switch>
       <Footer/>
     </div>
