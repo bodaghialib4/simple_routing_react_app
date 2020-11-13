@@ -9,6 +9,8 @@ import Product from "./components/Product";
 import About from "./components/About";
 import NotFound from "./components/NotFound";
 import Login from "./components/Login";
+import PrivateRoute from "./components/PrivateRoute";
+import Collection from "./components/Collection";
 
 function App() {
   return (
@@ -19,7 +21,7 @@ function App() {
         <Route path="/products/:product" component={Product}/>
         <Route path="/about" component={About}/>
         <Route path="/login" component={Login}/>
-
+        <PrivateRoute authed={false} path='/collections' component={Collection}/>
         <Route component={NotFound}/>
       </Switch>
       <Footer/>
