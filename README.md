@@ -10,5 +10,4 @@ A simple React app demo focused on routing
 
 This project implemented according to below Tutorial
 
-[link to the tutorial]([link to the tutorial](https://codesource.io/getting-started-with-react-router/)
-)
+[link to the tutorial](https://codesource.io/getting-started-with-react-router/)
